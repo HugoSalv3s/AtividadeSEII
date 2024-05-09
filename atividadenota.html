@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Nota</title>
+</head>
+<body>
+    
+    <p>Nome do Aluno: <span id="NomeAluno"></span></p>
+    <p>Primeira Nota: <span id="PrimeiraNota"></span></p>
+    <p>Segunda Nota: <span id="SegundaNota"></span></p>
+    <p>Terceira Nota: <span id="TerceiraNota"></span></p>
+    <p>Veredito: <span id="Media"></span></p>
+    <p>----------------------------------------------------------</p>
+    <p>Nota Maior: <span id="NotaMaior"></span></p>
+    <p>Nota Média: <span id="NotaMedia"></span></p>
+    <p>Nota Menor: <span id="NotaMenor"></span></p>
+
+
+    <script>
+
+
+        let nomealuno
+        let nota1
+        let nota2
+        let nota3
+        let media 
+        let resultado
+        let notamaior
+        let notamedia
+        let notamenor
+
+
+        nomealuno = prompt("Digite o nome do Aluno: ")
+        nota1 = Number(prompt("Digite a Primeira Nota: "))
+        nota2 = Number(prompt("Digite a Segunda Nota: "))
+        nota3 = Number(prompt("Digite a Terceira Nota: "))
+
+       
+        if(nota1 > nota2 && nota1 > nota3)
+            notamaior = nota1  
+        if(notamedia = nota2){
+        
+        }
+        if(notamenor = nota3){
+        
+        }else{
+            notamedia = nota3
+            notamenor = nota2
+        }
+
+        if(nota2 > nota1 && nota2 > nota3)
+             notamaior = nota2
+            if(notamedia = nota1)
+            {
+               
+            } 
+            if(notamenor = nota3)
+            {
+
+            }else{
+                notamedia = nota3
+                notamnor = nota1
+            }
+            if(nota3 > nota1 && nota3 > nota2)
+                notamaior = nota3
+            if(notamedia = nota2)
+            {
+              
+            } 
+            
+            if(notamenor = nota1)
+            {
+
+            } else{
+                notamedia = nota1
+                notamenor =  nota2
+            }
+        
+        
+
+
+
+
+        media = (nota1 + nota2 + nota3)/3
+
+
+        /*Ao adicionar uma mensagêm junto com a variavel, no lugar da virgula, colocar a mensagêm em apas, em seguida o sinal de mais, o nome da varial e fecha com sinal de +*/
+        
+
+
+
+        if(media >= 6.0){
+           media = " O Aluno " + nomealuno + " foi aprovado com média " + media
+        }
+
+        else{
+          media =  " O Aluno " + nomealuno + " foi reprovado com média " + media
+        }
+
+
+        
+
+        
+        document.getElementById("NomeAluno") .innerHTML = nomealuno
+        document.getElementById("PrimeiraNota") .innerHTML = nota1
+        document.getElementById("SegundaNota") .innerHTML = nota2
+        document.getElementById("TerceiraNota") .innerHTML = nota3
+        document.getElementById("Media") .innerHTML = media
+        document.getElementById("NotaMaior") .innerHTML = notamaior
+        document.getElementById("NotaMedia") .innerHTML = notamedia
+        document.getElementById("NotaMenor") .innerHTML = notamenor
+        
+
+    </script>
+
+
+
+</body>
+</html>

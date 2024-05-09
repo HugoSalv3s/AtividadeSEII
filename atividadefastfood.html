@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Fast Food</title>
+</head>
+<body>
+    
+<p>Nome do Cliente: <span id="NomeCliente"></span></p>
+<p>Opção: <span id="NumeroPedido"></span></p>
+<p>Promoção: <span id="Promocao"></span></p>
+<p>Especificação: <span id="DetalhePedido"></span></p>
+<p>Quantidade: <span id="Quantidade"></span></p>
+<p>Valor do pedido: <span id="ValorPedido"></span> </p>
+<p>Valor Total: <span id="ValorTotal"></span></p>
+
+<script>
+
+
+let nomecliente
+let numeropedido
+let promocao
+let detalhepedido
+let quantidade
+let valor
+let opcao
+let opcao2
+let valortotal
+
+nomecliente = prompt("Digite seu nome")
+numeropedido =  prompt("Escolha o numero da promoção: 1 - Big Super Sanduba (R$ 5,00)  2 - Quase Super Sanduba (R$ 3,00) 3 - Mirradus Sanduba (R$ 1,50)")
+quantidade = Number (prompt("Digite a quantidade da promoção"))
+
+
+if(numeropedido == 1) {
+    promocao = "Big Sanduba"
+    detalhepedido = "Dois Hambúrguers, Queijo, batata frita e refrigerante"
+    valor =   5.00.toLocaleString('pt-br', { style: 'currency', currency: 'BRL'})
+    valortotal = (quantidade * 5.00).toLocaleString('pt-br', { style: 'currency', currency: 'BRL'})
+}
+
+else{}
+
+
+if(numeropedido == 2) {
+    promocao = "Quase Super Sanduba"
+    detalhepedido = "Um Hambúrguer, batata frita e refrigerante"
+    valor = 3.00
+    valortotal = quantidade * 3.00
+}
+else{}
+
+if(numeropedido == 3) {
+    promocao = "Mirradus Sanduba"
+    detalhepedido = "Um Misto quente e refrigerante"
+    valor = 1.50
+    valortotal = quantidade * 1.50
+}
+else{}
+
+
+
+
+console.log
+document.getElementById("NomeCliente") .innerHTML = nomecliente
+document.getElementById("NumeroPedido") .innerHTML = numeropedido
+document.getElementById("Promocao") .innerHTML = promocao
+document.getElementById("DetalhePedido") .innerHTML = detalhepedido
+document.getElementById("ValorPedido") .innerHTML = valor
+document.getElementById("Quantidade") .innerHTML = quantidade
+document.getElementById("ValorTotal") .innerHTML = valortotal
+
+
+
+
+</script>
+
+
+</body>
+</html>

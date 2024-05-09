@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Peso</title>
+</head>
+<body>
+
+<p>Nome da Primeira pessoa: <span id="PrimeiraPessoa"></span></p>
+<p>Peso da primeira pessoa: <span id="PrimeiroPeso"></span></p>
+<p>Nome da segunda pessoa: <span id="SegundaPessoa"></span></p>
+<p>Peso da segunda pessoa: <span id="SegundoPeso"></span></p>
+<p>Nome da terceira pessoa: <span id="TerceiraPessoa"></span></p>
+<p>Peso da terceira pessoa: <span id="TerceiroPeso"></span></p>
+<p>Quem é a pessoa mais pesada? <span id="Resultado"></span></p>
+<p>---------------------<h2>Peso por Ordem</h2>-------------------------------------</p>
+<p>Primeira pessoa: <span id="PessoaOrdem1"></span></p>
+<p>Peso: <span id="PesoOrdem1"></span></p>
+<p>Segundo Nome: <span id="PessoaOrdem2"></span></p>
+<p>Peso: <span id="PesoOrdem2"></span></p>
+<p>Terceiro Nome: <span id="PessoaOrdem3"></span></p>
+<p>Peso: <span id="PesoOrdem3"></span></p>
+
+
+<script>
+
+    let nomepessoa1
+    let nomepessoa2
+    let nomepessoa3
+    let peso1
+    let peso2
+    let peso3
+    let resultado
+    let pessoaordem1
+    let pesoordem1
+    let pessoaordem2
+    let pesoordem2
+    let pessoaordem3
+    let pesoordem3
+
+    nomepessoa1 = prompt("Digite o nome da primeira pessoa")
+    peso1 = Number(prompt("Digite o seu peso"))
+    nomepessoa2 = prompt("Digite o nome da segunda pessoa")
+    peso2 = Number(prompt("Digite o seu peso"))
+    nomepessoa3 = prompt("Digite o nome da terceira pessoa")
+    peso3 = Number(prompt("Digite o seu peso"))
+
+    if(peso1 >= peso2, peso3){
+        resultado = nomepessoa1 
+    }
+
+    if(peso2 >= peso1, peso3){
+        resultado = nomepessoa2
+    }
+
+    if(peso3 >= peso1, peso2){
+        resultado = nomepessoa3
+    }
+
+/*DADOS DO PRIMEIRO NOME E PESO*/
+    if( peso1 > peso2 && peso1 > peso3 && nomepessoa1 > nomepessoa2 && nomepessoa1 > nomepessoa3)
+    pesoordem1 = peso1
+    pessoaordem1 = nomepessoa1
+  
+    if(peso1 > peso3){
+    pesoordem2 = peso2
+    pesoordem3 = peso3
+
+}
+    
+
+if(nomepessoa1 > nomepessoa3){
+    pessoaordem2 = nomepessoa2
+    pessoaordem3 = nomepessoa3
+}
+
+
+else 
+{
+    pessoaordem3 = nomepessoa3
+    pessoaordem2 = nomepessoa2
+
+    pesoordem2 = peso3
+    pesordem3 = peso2
+}
+
+
+/*DADOS DO SEGUNDO NOME E PESO*/
+if( peso2 > peso1 && peso2 > peso3 && nomepessoa2 > nomepessoa1 && nomepessoa2 > nomepessoa3)
+    pesoordem1 = peso2    
+    pessoaordem1 = nomepessoa2
+    
+    if(peso1 > peso3){
+    pesoordem2 = peso1
+    pesoordem3 = peso3
+}
+
+
+
+    if(nomepessoa1 > nomepessoa3){
+        pessoaordem2 = nomepessoa1
+        pessoaordem3 = nomepessoa3
+    }
+
+
+else
+{
+    pessoaordem2 = nomepessoa3
+    pessoaordem3 = nomepessoa1
+
+    pesoordem2 = peso3
+    pesoordem3 = peso1
+}
+
+
+/*DADOS DO TERCEIRO NOME E PESO*/
+if( peso3 > peso1 && peso3 > peso2 && nomepessoa3 > nomepessoa1 && nomepessoa3 > nomepessoa2)
+    pesoordem1 = peso3
+    pessoaordem1 = nomepessoa3
+
+    if(peso1 > peso2){
+    pesoordem2 = peso1
+    pesoordem3 = peso2
+}
+
+
+
+    if(nomepessoa1 > nomepessoa2){
+    pessoaordem2 = nomepessoa1
+    pessoaordem3 = nomepessoa2
+
+}
+
+else
+{
+    pessoaordem2 = nomepessoa2
+    pessoaordem3 = nomepessoa1
+
+    pesoordem2 = peso2
+    pesoordem3 = peso1
+}
+
+
+
+    console.log
+    document. getElementById("PrimeiraPessoa").innerHTML = nomepessoa1
+    document. getElementById("PrimeiroPeso").innerHTML = peso1
+    document. getElementById("SegundaPessoa").innerHTML = nomepessoa2
+    document. getElementById("SegundoPeso").innerHTML = peso2
+    document. getElementById("TerceiraPessoa").innerHTML = nomepessoa3
+    document. getElementById("TerceiroPeso").innerHTML = peso3
+    document. getElementById("Resultado"). innerHTML = resultado
+    
+    document. getElementById("PessoaOrdem1").innerHTML = pessoaordem1
+    document. getElementById("PesoOrdem1").innerHTML = pesoordem1
+    document. getElementById("PessoaOrdem2").innerHTML = pessoaordem2
+    document. getElementById("PesoOrdem2").innerHTML = pesoordem2
+    document. getElementById("PessoaOrdem3").innerHTML = pessoaordem3
+    document. getElementById("PesoOrdem3").innerHTML = pesoordem3
+
+
+
+</script>
+
+    
+</body>
+</html>
